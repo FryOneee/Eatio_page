@@ -3,165 +3,99 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Innovation at Its Core</title>
-    <style>
-        /* Reset stylów */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-        }
-
-        /* Sekcja nagłówka (hero) */
-        .hero {
-            text-align: center;
-            padding: 60px 20px;
-        }
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        .hero p {
-            font-size: 1.1rem;
-            color: #666;
-        }
-
-        /* Sekcja z funkcjonalnościami / wartościami firmy */
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            padding: 60px 20px;
-            background-color: #f8f9fa;
-        }
-        .feature-item {
-            flex: 1 1 200px;
-            max-width: 300px;
-            text-align: left;
-        }
-        .feature-item h3 {
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-        .feature-item p {
-            line-height: 1.6;
-            color: #555;
-        }
-
-        /* Stopka */
-        footer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            padding: 40px 20px;
-            background-color: #f2f2f2;
-        }
-        .footer-column h4 {
-            margin-bottom: 10px;
-            font-size: 1rem;
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-        .footer-column ul {
-            list-style: none;
-        }
-        .footer-column ul li {
-            margin-bottom: 6px;
-            color: #555;
-        }
-        .footer-column ul li a {
-            color: #555;
-            text-decoration: none;
-        }
-        .footer-column ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* Responsywność */
-        @media (max-width: 768px) {
-            .features {
-                flex-direction: column;
-                align-items: center;
-            }
-            .footer-column {
-                margin-bottom: 20px;
-            }
-        }
-    </style>
+    <title>Eatio – Your Food Companion</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- Sekcja nagłówka (hero) -->
+<!-- Navbar -->
+<nav class="nav">
+    <a class="logo" href="#">
+        <img src="imgs/logo.png" alt="Eatio logo" />
+        Eatio
+    </a>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="https://apps.apple.com/pl/app/eatio/id6741687578?l">Download</a></li>
+        <li><a href="mailto:eatio.english@gmail.com">Contact</a></li>
+    </ul>
+    <a href="https://apps.apple.com/pl/app/eatio/id6741687578?l">
+        <img class="download-app-store-header" src="imgs/download_on_app_store_en.svg" alt="Download on App Store" />
+    </a>
+</nav>
+
+<!-- Hero -->
 <section class="hero">
-    <h1>A Passion for Innovation</h1>
-    <p>We embrace challenges and craft innovative digital solutions that truly make a difference.</p>
-</section>
-
-<!-- Sekcja funkcjonalności / wartości firmy -->
-<section class="features">
-    <div class="feature-item">
-        <h3>Expertise</h3>
-        <p>Our team brings over a decade of expertise in creating digital masterpieces.</p>
+    <div class="hero-content">
+        <h1>Track Your Meals<br/>with a Single Snap</h1>
+        <p>Snap a photo, scan a barcode or describe your meal <br/>and get instant calorie & nutrition info.</p>
+        <div class="download-btns">
+            <img class="download-app-store-section-1" src="imgs/download_on_app_store_en.svg" alt="Download on App Store" />
+        </div>
     </div>
-    <div class="feature-item">
-        <h3>Reliable Support</h3>
-        <p>We're always here to listen and provide effective, timely solutions.</p>
-    </div>
-    <div class="feature-item">
-        <h3>Global Reach</h3>
-        <p>Our apps are designed to be accessible and intuitive for a diverse global audience.</p>
-    </div>
-    <div class="feature-item">
-        <h3>Dynamic Culture</h3>
-        <p>We thrive on creativity and rapid innovation, cultivating a dynamic work environment.</p>
-    </div>
-    <div class="feature-item">
-        <h3>Security & Confidentiality</h3>
-        <p>Your data is protected with state-of-the-art security measures and absolute privacy.</p>
-    </div>
-    <div class="feature-item">
-        <h3>Technical Excellence</h3>
-        <p>Our engineers develop robust, scalable solutions to overcome complex challenges.</p>
+    <div class="hero-image">
+        <img src="imgs/app/app_home.png" alt="Eatio Home Screen Preview" />
     </div>
 </section>
 
-<!-- Stopka -->
+
+
+<!-- App Highlights -->
+<section class="app-highlights">
+    <h2>What does Eatio include?</h2>
+    <div class="highlights-content">
+        <div class="highlights-image">
+            <img src="imgs/app/app_home.png" alt="Eatio Home Screen">
+        </div>
+        <div class="highlights-features">
+            <div class="feature-box">
+                <h3>Track Your Meals for Today</h3>
+                <p>A clear dashboard with a list of today's meals.</p>            </div>
+            <div class="feature-box">
+                <h3>Manage Your Meal List</h3>
+                <p>Browse and organize all your logged meals in one place.</p>
+            </div>
+            <div class="feature-box">
+                <h3>View Detailed Nutrition</h3>
+                <p>Drill down into macro and micronutrient breakdowns for each meal.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer -->
 <footer>
-    <div class="footer-column">
-        <h4>INNOVATECH SOLUTIONS</h4>
-        <li><a>eatio.english@gmail.com</a></li>
-    </div>
-    <div class="footer-column">
-        <h4>COMPANY</h4>
+    <div class="footer-col">
         <ul>
-            <li><a href="#">Our Story</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Vision</a></li>
+        <li>
+        <a class="logo" href="#">
+            <img src="imgs/logo.png" alt="Eatio logo" />
+            Eatio
+        </a></li>
+        <li>    <a href="https://apps.apple.com/pl/app/eatio/id6741687578?l">
+            <img class="download-app-store-header" src="imgs/download_on_app_store_en.svg" alt="Download on App Store" />
+        </a>
+        </li>
         </ul>
     </div>
-    <div class="footer-column">
+    <div class="footer-col">
         <h4>LEGAL</h4>
         <ul>
             <li><a href="privacy-policy.pdf">Privacy Policy</a></li>
-            <li><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Service</a></li>
-            <li><a href="#">Compliance</a></li>
+            <li><a href="terms-and-conditions.pdf">Terms of Service</a></li>
         </ul>
     </div>
-    <div class="footer-column">
-        <h4>CONNECT</h4>
+    <div class="footer-col">
+        <h4>COMPANY</h4>
         <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#">About</a></li>
         </ul>
     </div>
 </footer>
 
+<script src="index.js"></script>
 </body>
 </html>
