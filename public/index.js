@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const slides = [
         'imgs/app/app_home.png',
         'imgs/app/app_list.png',
-        'imgs/app/app_meal.png'
+        'imgs/app/app_meal.png',
+        'imgs/app/app_meal_reviews.png',
     ];
     const mainImg = document.querySelector('.app-highlights .highlights-image img');
     const thumbs = document.querySelectorAll('.app-highlights .thumbnails img');
